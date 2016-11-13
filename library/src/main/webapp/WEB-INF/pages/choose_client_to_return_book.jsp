@@ -16,9 +16,11 @@
           media="screen, projection">
 </head>
 <body>
+
 <br>
 <br>
 <h2>List of all clients with rented books</h2>
+
 <table class="editTable" cellpadding="1px">
     <tr>
         <th>#</th>
@@ -61,7 +63,7 @@
     function getTel(url, tel) {
         window.location.href = "#result'";
         $.get(url, {
-            clientTel: tel
+            clientTel : tel
         }, function (responseText) {
             $('#result').html(responseText);
         });

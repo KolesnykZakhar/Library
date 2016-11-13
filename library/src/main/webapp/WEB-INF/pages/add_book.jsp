@@ -52,7 +52,7 @@
         <br>
     </label>
     <br>
-    <button onclick="addBook('add_book.cab')" type="submit" class="button">Add book</button>
+    <button onclick="addBook('add_book.cab')" type="submit" class="button" >Add book</button>
 </form>
 <br>
 <br>

@@ -1,6 +1,7 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
 
+import ru.mail.zahar.kolesnik.library.models.Library;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

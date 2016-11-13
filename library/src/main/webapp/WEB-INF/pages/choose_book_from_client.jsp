@@ -20,31 +20,32 @@
 <body>
 <br>
 <h2>List of all books in library</h2>
-<form>
-    <select style="align-self: center; transform-style: preserve-3d; font-size: 25px; width: 750px; height: 50px;"
-            title="Choose the return date" required id="dateReturn">
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(1))%>"><%=LocalDateTime.now().plusDays(1).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(2))%>"><%=LocalDateTime.now().plusDays(2).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(3))%>"><%=LocalDateTime.now().plusDays(3).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(4))%>"><%=LocalDateTime.now().plusDays(4).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(5))%>"><%=LocalDateTime.now().plusDays(5).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(6))%>"><%=LocalDateTime.now().plusDays(6).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(7))%>"><%=LocalDateTime.now().plusDays(7).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(8))%>"><%=LocalDateTime.now().plusDays(8).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(9))%>"><%=LocalDateTime.now().plusDays(9).toLocalDate()%>
-        </option>
-        <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(10))%>"><%=LocalDateTime.now().plusDays(10).toLocalDate()%>
-        </option>
-    </select>
-</form>
+<select <%--form="issueEnd"--%> style="align-self: center; transform-style: preserve-3d; font-size: 25px; width: 750px; height: 50px;"
+                                title="Choose the return date" required id="dateReturn">
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(1))%>"><%=LocalDateTime.now().plusDays(1).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(2))%>"><%=LocalDateTime.now().plusDays(2).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(3))%>"><%=LocalDateTime.now().plusDays(3).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(4))%>"><%=LocalDateTime.now().plusDays(4).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(5))%>"><%=LocalDateTime.now().plusDays(5).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(6))%>"><%=LocalDateTime.now().plusDays(6).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(7))%>"><%=LocalDateTime.now().plusDays(7).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(8))%>"><%=LocalDateTime.now().plusDays(8).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(9))%>"><%=LocalDateTime.now().plusDays(9).toLocalDate()%>
+    </option>
+    <option value="<%=Timestamp.valueOf(LocalDateTime.now().plusDays(10))%>"><%=LocalDateTime.now().plusDays(10).toLocalDate()%>
+    </option>
+</select>
+<%--<form>--%>
+<%--<input title="Choose the return date" type="datetime" id="dateReturn"  class="date">--%>
+<%--</form>--%>
 <table>
     <tr>
         <th>#</th>
@@ -58,6 +59,7 @@
     <c:forEach items="${requestScope.foundedBooks}" var="book" varStatus="index">
         <tr>
             <td>${index.index+1}</td>
+                <%--<td>${book.isbn}</td>--%>
             <td>${book.bookName}</td>
             <td>${book.category}</td>
             <td>${book.authorName}</td>

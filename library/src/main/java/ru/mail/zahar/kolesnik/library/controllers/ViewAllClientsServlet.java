@@ -1,7 +1,7 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
 import ru.mail.zahar.kolesnik.library.models.Library;
-import ru.mail.zahar.kolesnik.library.models.entity.Client;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Client;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,10 +14,14 @@ import java.util.List;
 
 @WebServlet(name = "view_all_clients", urlPatterns = "/view_all_clients.cab")
 public class ViewAllClientsServlet extends HttpServlet {
+
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Client> clients = null;
+
         Library library = new Library();
+
         try {
             clients = library.getAllClients();
         } catch (SQLException | ClassNotFoundException e) {
@@ -31,7 +35,9 @@ public class ViewAllClientsServlet extends HttpServlet {
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         Library library = new Library();
+
         try {
             Client client = library.getClientByPhone(req.getParameter("clientTel"));
             req.setAttribute("nameClient", client.name);

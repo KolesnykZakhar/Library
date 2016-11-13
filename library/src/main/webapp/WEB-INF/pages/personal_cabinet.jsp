@@ -17,8 +17,10 @@
           media="screen, projection">
 </head>
 <body>
+
 <% boolean isLibrarian = session.getAttribute("role").equals("Librarian");%>
 <% boolean isAdministrator = session.getAttribute("role").equals("Administrator");%>
+
 <br>
 <form class="logOutButton" action="${pageContext.request.contextPath}/logout.cab">
     <button type="submit" class="logOutButton" id="logout">Log out</button>
@@ -28,6 +30,7 @@
 <br>
 <h1>Personal Cabinet</h1>
 <br>
+
 <c:choose>
     <c:when test="<%= isLibrarian%>">
         <form>
@@ -40,8 +43,7 @@
 <c:choose>
     <c:when test="<%= isLibrarian || isAdministrator%>">
         <form>
-            <button onclick="get('search_client.cab')" type="button" class="button" id="searchClient">Search client
-            </button>
+            <button onclick="get('search_client.cab')" type="button" class="button" id="searchClient">Search client</button>
         </form>
         <br>
     </c:when>
@@ -50,8 +52,7 @@
 <c:choose>
     <c:when test="<%= isLibrarian%>">
         <form>
-            <button onclick="get('view_debtors.cab')" type="button" class="button" id="viewDebtors">View debtors
-            </button>
+            <button onclick="get('view_debtors.cab')" type="button" class="button" id="viewDebtors">View debtors</button>
         </form>
         <br>
     </c:when>
@@ -60,9 +61,7 @@
 <c:choose>
     <c:when test="<%= isLibrarian || isAdministrator%>">
         <form>
-            <button type="button" onclick="get('view_all_clients.cab')" class="button" id="viewAllClients">View all
-                clients
-            </button>
+            <button type="button" onclick="get('view_all_clients.cab')" class="button" id="viewAllClients">View all clients</button>
         </form>
         <br>
         <hr>
@@ -104,9 +103,7 @@
 <c:choose>
     <c:when test="<%= isLibrarian%>">
         <form>
-            <button onclick="get('view_issued_books.cab')" type="button" class="button" id="viewIssuedBooks">View issued
-                books
-            </button>
+            <button onclick="get('view_issued_books.cab')" type="button" class="button" id="viewIssuedBooks">View issued books</button>
         </form>
         <br>
     </c:when>
@@ -119,9 +116,7 @@
 <hr>
 
 <form>
-    <button onclick="get('view_my_rented_books.cab')" type="button" class="button" id="viewMyRentedBooks">View my rented
-        books
-    </button>
+    <button onclick="get('view_my_rented_books.cab')" type="button" class="button" id="viewMyRentedBooks">View my rented books</button>
 </form>
 
 <br>
@@ -129,7 +124,7 @@
 <hr id="hrMax">
 <br>
 <br>
-<div id="result"></div>
+<div id="result" ></div>
 <br>
 <br>
 <br>

@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 
+//@WebFilter(servletNames = {"personalCabinet"})
 @WebFilter(urlPatterns = {"*.cab"})
 public class FilterConnect implements Filter {
 

@@ -1,7 +1,9 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
 import ru.mail.zahar.kolesnik.library.models.Library;
-import ru.mail.zahar.kolesnik.library.models.entity.Client;
+import ru.mail.zahar.kolesnik.library.models.entity.Person;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Client;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,6 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 @WebServlet(name = "return_book", urlPatterns = "/return_book.cab")
 public class ReturnBookServlet extends HttpServlet {
@@ -39,6 +43,7 @@ public class ReturnBookServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         resp.setContentType("text/html");
         req.getRequestDispatcher("/WEB-INF/pages/return_book_from_client.jsp").forward(req, resp);
     }

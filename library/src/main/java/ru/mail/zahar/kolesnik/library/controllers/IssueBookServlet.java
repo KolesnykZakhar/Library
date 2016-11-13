@@ -1,6 +1,8 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
 import ru.mail.zahar.kolesnik.library.models.Library;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Client;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,14 +12,20 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
+import java.util.List;
 
 @WebServlet(name = "issue_book", urlPatterns = "/issue_book.cab")
 public class IssueBookServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        getServletConfig().getServletContext().setAttribute("client", req.getSession().getAttribute("name"));
+//        getServletConfig().getServletContext().setAttribute("id", 12);
         getServletConfig().getServletContext().setAttribute("selectedClient", "Choose the client");
         getServletConfig().getServletContext().setAttribute("selectedBook", "Choose the book");
         getServletConfig().getServletContext().setAttribute("selectedReturnDate", "Selected date to return");
+
+
         resp.setContentType("text/html");
         req.getRequestDispatcher("/WEB-INF/pages/issue_book.jsp").forward(req, resp);
     }
@@ -45,6 +53,11 @@ public class IssueBookServlet extends HttpServlet {
             req.getRequestDispatcher("/WEB-INF/pages/error_book_already_issued.jsp").forward(req, resp);
             return;
         }
+
+//        System.out.println(getServletConfig().getServletContext().getAttribute("isbn"));
+//        System.out.println(getServletConfig().getServletContext().getAttribute("tel"));
+//        System.out.println(req.getParameter("dateReturn"));
+//        System.out.println(isNotIssued);
         try {
 
             library.issueBookToClient(isbn, tel, Timestamp.valueOf(req.getParameter("dateReturn")));
@@ -55,5 +68,20 @@ public class IssueBookServlet extends HttpServlet {
             req.getRequestDispatcher("/WEB-INF/pages/error_database.jsp").forward(req, resp);
             e.printStackTrace();
         }
+
+
+//        System.out.println(getServletConfig().getServletContext().getAttribute("client"));
+//        System.out.println(getServletConfig().getServletContext().getAttribute("id"));
+//        System.out.println(getServletConfig().getServletContext().getAttribute("selectedClient"));
+//        System.out.println(getServletConfig().getServletContext().getAttribute("selectedBook"));
+//        System.out.println(getServletConfig().getServletContext().getAttribute("selectedReturnDate"));
+//
+//
+//
+//        System.out.println(req.getParameter("dateReturn"));
+        // TODO: 03.11.2016
+
+//        resp.setContentType("text/html");
+//        req.getRequestDispatcher("/WEB-INF/pages/issue_book.jsp").forward(req, resp);
     }
 }

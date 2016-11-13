@@ -1,11 +1,17 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
+import ru.mail.zahar.kolesnik.library.models.Library;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.HttpCookie;
+import java.sql.SQLException;
+import java.util.List;
 
 @WebServlet(name = "logout", urlPatterns = "/logout.cab")
 public class LogOutServlet extends HttpServlet {

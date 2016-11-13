@@ -31,4 +31,5 @@ public class EditClientServlet extends HttpServlet {
         resp.setContentType("text/html");
         req.getRequestDispatcher("WEB-INF/pages/page_ok.jsp").forward(req, resp);
     }
+
 }
