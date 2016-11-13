@@ -2,19 +2,16 @@ package ru.mail.zahar.kolesnik.library.models;
 
 
 import ru.mail.zahar.kolesnik.library.dao.impl.SqlDao;
-import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
-import ru.mail.zahar.kolesnik.library.models.entity.impl.Client;
+import ru.mail.zahar.kolesnik.library.models.entity.Book;
+import ru.mail.zahar.kolesnik.library.models.entity.Client;
 
 import java.sql.*;
-import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Library {
 
-
     private SqlDao dao = new SqlDao();
-
 
     /***/
     public List<Book> getDebtors() throws SQLException, ClassNotFoundException {
@@ -38,15 +35,9 @@ public class Library {
         dao.addClientToBase(name, surname, patronymic, tel, login, password);
 
     }
-    /***/
-    public void changeTimeToRead(int period) {
-        Book.timeToRead = period;
-    }
-
-
 
     public void editClientByID(int id, String namePerson, String surname, String patronymic, String tel,
-                           String loginClient, String passwordClient) throws SQLException, ClassNotFoundException {
+                               String loginClient, String passwordClient) throws SQLException, ClassNotFoundException {
         dao.editClientInDatabaseByID(id, namePerson, surname, patronymic, tel,
                 loginClient, passwordClient);
     }
@@ -55,6 +46,7 @@ public class Library {
 
         return dao.searchClientInBase(name, surname, patronymic);
     }
+
     /***/
     public List<Book> searchBook(String authorName, String authorPatronymic, String authorSurname, String bookName,
                                  String category) throws SQLException, ClassNotFoundException {
@@ -65,10 +57,12 @@ public class Library {
     public String[] role(String login, String password) throws SQLException, ClassNotFoundException {
         return dao.getPersonFromBase(login, password);
     }
+
     /***/
     public List<Book> getAllBooks() throws SQLException, ClassNotFoundException {
         return dao.getAllBooksFromBase();
     }
+
     /***/
     public List<Book> getIssuedBooksByClient(String login) throws SQLException, ClassNotFoundException {
         List<Book> issuedBooks = dao.getIssuedBooksFromBase();

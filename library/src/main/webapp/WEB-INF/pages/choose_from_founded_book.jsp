@@ -31,7 +31,6 @@
     <c:forEach items="${requestScope.foundedBooks}" var="book" varStatus="index">
         <tr>
             <td>${index.index+1}</td>
-            <%--<td>${book.isbn}</td>--%>
             <td>${book.bookName}</td>
             <td>${book.category}</td>
             <td>${book.authorName}</td>
@@ -63,7 +62,7 @@
     function postIsbn(url, isbnBook) {
         window.location.href = "#result'";
         $.post(url, {
-            isbn : isbnBook
+            isbn: isbnBook
         }, function (responseText) {
             $('#result').html(responseText);
         });

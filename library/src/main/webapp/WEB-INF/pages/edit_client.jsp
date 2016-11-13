@@ -1,5 +1,5 @@
 <%@ page import="ru.mail.zahar.kolesnik.library.models.Library" %>
-<%@ page import="ru.mail.zahar.kolesnik.library.models.entity.impl.Client" %><%--
+<%@ page import="ru.mail.zahar.kolesnik.library.models.entity.Client" %><%--
   Created by IntelliJ IDEA.
   User: User
   Date: 25.10.2016
@@ -59,7 +59,7 @@
     </label>
     <input type="hidden" name="idClient" id="idClient" value="<%=request.getAttribute("idClient")%>">
     <br>
-    <button  type="button" onclick="editClient('edit_client.cab')" class="button">Edit client</button>
+    <button type="button" onclick="editClient('edit_client.cab')" class="button">Edit client</button>
 </form>
 <br>
 <form>
@@ -80,7 +80,7 @@
     function removeClient(url) {
         window.location.href = "#result";
         $.post(url, {
-            idClient : $('#idClient').val()
+            idClient: $('#idClient').val()
         }, function (responseText) {
             $('#result').html(responseText);
         });
@@ -96,7 +96,7 @@
             loginClient: $('#loginClient').val(),
             passwordClient: $('#passwordClient').val(),
             confirmPasswordClient: $('#confirmPasswordClient').val(),
-            idClient : $('#idClient').val()
+            idClient: $('#idClient').val()
         }, function (responseText) {
             $('#result').html(responseText);
         });
