@@ -1,7 +1,7 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
 import ru.mail.zahar.kolesnik.library.models.Library;
-import ru.mail.zahar.kolesnik.library.models.entity.impl.Client;
+import ru.mail.zahar.kolesnik.library.models.entity.Client;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -38,7 +38,6 @@ public class SelectClientToIssueServlet extends HttpServlet {
     }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
         resp.setContentType("text/html");
         req.getRequestDispatcher("/WEB-INF/pages/select_client_to_issue.jsp").forward(req, resp);
     }

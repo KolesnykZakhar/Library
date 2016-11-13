@@ -2,8 +2,8 @@ package ru.mail.zahar.kolesnik.library.dao.impl;
 
 
 import ru.mail.zahar.kolesnik.library.dao.Dao;
-import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
-import ru.mail.zahar.kolesnik.library.models.entity.impl.Client;
+import ru.mail.zahar.kolesnik.library.models.entity.Book;
+import ru.mail.zahar.kolesnik.library.models.entity.Client;
 
 import java.sql.*;
 import java.time.LocalDateTime;
@@ -18,6 +18,11 @@ public class SqlDao implements Dao {
     private ResultSet resultSet;
 
     /**
+     * value used to add book to dataBase
+     */
+    private final static String SQL_REQUEST_INSERT_BOOK = "INSERT INTO books (isbn, bookName, category, description, authorName, authorPatronymic, authorSurname) VALUES (?, ?, ?, ?, ?, ?, ?);";
+
+    /**
      * value used to get all books from database
      */
     private static final java.lang.String SQL_REQUEST_GET_ALL_BOOKS = "SELECT * FROM books;";
@@ -25,31 +30,28 @@ public class SqlDao implements Dao {
     /**
      * value used to founding books from database
      */
-    private final static String SQL_REQUEST_SEARCH_BOOKS = "SELECT * FROM books WHERE ";
+    private final static String SQL_REQUEST_SEARCH_BOOKS = "SELECT * FROM books WHERE authorName LIKE ? AND " +
+            "authorPatronymic LIKE ? AND authorSurname LIKE ? AND bookName LIKE ? AND category LIKE ?;";
     /**
      * value used to founding clients from database
      */
-    private final static String SQL_REQUEST_SEARCH_CLIENTS = "SELECT * FROM persons WHERE ";
+    private final static String SQL_REQUEST_SEARCH_CLIENTS = "SELECT * FROM persons WHERE namePerson LIKE ? AND patronymic LIKE ? AND surname LIKE ?;";
 
     /**
      * value used to getting the name and role of the user by his login and password
      */
-    private static final String SQL_REQUEST_AUTHORIZATION = "SELECT role, namePerson FROM persons WHERE ";
+    private static final String SQL_REQUEST_AUTHORIZATION = "SELECT role, namePerson FROM persons WHERE login = ? AND password = ?;";
 
-    /**
-     * value used to add book to dataBase
-     */
-    private final static String SQL_REQUEST_INSERT_BOOK = "INSERT INTO books (isbn, bookName, category, description, authorName, authorPatronymic, authorSurname) VALUES ";
 
     /**
      * value used to find issued books
      */
-    final static String SQL_REQUEST_GET_ISSUED_BOOKS = "SELECT * FROM (SELECT * FROM shelf NATURAL JOIN books) AS issued_books NATURAL JOIN persons AS issue ORDER BY givenDate ASC ";
+    private final static String SQL_REQUEST_GET_ISSUED_BOOKS = "SELECT * FROM (SELECT * FROM shelf NATURAL JOIN books) AS issued_books NATURAL JOIN persons AS issue ORDER BY givenDate ASC ";
 
     /**
      * value used to add client to the database
      */
-    private final static String SQL_REQUEST_INSERT_CLIENT = "INSERT INTO persons (namePerson, surname, patronymic, tel, login, password) VALUES ";
+    private final static String SQL_REQUEST_INSERT_CLIENT = "INSERT INTO persons (namePerson, surname, patronymic, tel, login, password) VALUES (?, ?, ?, ?, ?, ?);";
 
     /**
      * линк к домашней базе
@@ -66,7 +68,7 @@ public class SqlDao implements Dao {
     /**
      * коннектится к базе принимая внутренние классы метода
      */
-    void connectToBase(RequestDataBase requestDataBase) throws SQLException, ClassNotFoundException {
+    private void connectToBase(RequestDataBase requestDataBase) throws SQLException, ClassNotFoundException {
         Class.forName("com.mysql.jdbc.Driver");
         try {
             connection = DriverManager.getConnection(DATA_BASE_URL);
@@ -110,7 +112,8 @@ public class SqlDao implements Dao {
                 while (resultSet.next()) {
                     issuedBooks.add(new Book(resultSet.getInt("idBook"), resultSet.getInt("isbn"), resultSet.getString("bookName"), resultSet.getString("category"),
                             resultSet.getString("description"), resultSet.getString("authorName"), resultSet.getString("authorPatronymic"),
-                            resultSet.getString("authorSurname"), resultSet.getTimestamp("givenDate"), resultSet.getTimestamp("returnedDate"), new Client(resultSet.getInt("idPerson"), resultSet.getString("role"),
+                            resultSet.getString("authorSurname"), resultSet.getTimestamp("givenDate"), resultSet.getTimestamp("returnedDate"),
+                            new Client(resultSet.getInt("idPerson"), resultSet.getString("role"),
                             resultSet.getString("namePerson"), resultSet.getString("patronymic"), resultSet.getString("surname"),
                             resultSet.getString("tel"), resultSet.getString("login"), resultSet.getString("password"))
                     ));
@@ -128,11 +131,17 @@ public class SqlDao implements Dao {
     @Override
     public void addBookToBase(int id, String bookName, String category, String description, String authorName, String authorPatronymic,
                               String authorSurname) throws SQLException, ClassNotFoundException {
-        String book = "('" + id + "', '" + bookName + "', '" + category + "', '" + description + "', '" + authorName + "', '" + authorPatronymic + "', '" + authorSurname + "');";
         //inner
         class RequestDB implements RequestDataBase {
             public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement(SQL_REQUEST_INSERT_BOOK + book);
+                preparedStatement = conn.prepareStatement(SQL_REQUEST_INSERT_BOOK);
+                preparedStatement.setInt(1, id);
+                preparedStatement.setString(2, bookName.trim());
+                preparedStatement.setString(3, category.trim());
+                preparedStatement.setString(4, description.trim());
+                preparedStatement.setString(5, authorName.trim());
+                preparedStatement.setString(6, authorPatronymic.trim());
+                preparedStatement.setString(7, authorSurname.trim());
                 preparedStatement.executeUpdate();
             }
         }
@@ -146,11 +155,16 @@ public class SqlDao implements Dao {
     @Override
     public void addClientToBase(String name, String surname, String patronymic, String tel, String login,
                                 String password) throws SQLException, ClassNotFoundException {
-        String client = "( '" + name + "', '" + surname + "', '" + patronymic + "', '" + tel + "', '" + login + "', '" + password + "')";
         //inner
         class RequestDB implements RequestDataBase {
             public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement(SQL_REQUEST_INSERT_CLIENT + client);
+                preparedStatement = conn.prepareStatement(SQL_REQUEST_INSERT_CLIENT);
+                preparedStatement.setString(1, name.trim());
+                preparedStatement.setString(2, surname.trim());
+                preparedStatement.setString(3, patronymic.trim());
+                preparedStatement.setString(4, tel.trim());
+                preparedStatement.setString(5, login.trim());
+                preparedStatement.setString(6, password.trim());
                 preparedStatement.executeUpdate();
             }
         }
@@ -172,11 +186,12 @@ public class SqlDao implements Dao {
      */
     @Override
     public String[] getPersonFromBase(String login, String password) throws SQLException, ClassNotFoundException {
-        String loginPassword = "login = '" + login.trim() + "' AND password = '" + password.trim() + "';";
         final String[] role = {"", ""};
         class RequestDB implements RequestDataBase {
             public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement(SQL_REQUEST_AUTHORIZATION + loginPassword);
+                preparedStatement = conn.prepareStatement(SQL_REQUEST_AUTHORIZATION);
+                preparedStatement.setString(1, login.trim());
+                preparedStatement.setString(2, password.trim());
                 resultSet = preparedStatement.executeQuery();
                 if (resultSet.next()) {
 
@@ -198,15 +213,17 @@ public class SqlDao implements Dao {
     @Override
     public List<Book> searchBookInBase(String authorName, String authorPatronymic, String authorSurname, String bookName,
                                        String category) throws SQLException, ClassNotFoundException {
-        String searchBook = "authorName LIKE '%" + authorName + "%' AND authorPatronymic LIKE '%" +
-                authorPatronymic + "%' AND authorSurname LIKE '%" + authorSurname + "%' AND bookName LIKE '%" +
-                bookName + "%' AND category LIKE '%" + category + "%';";
         List<Book> foundedBooks = new LinkedList<>();
 
         //inner
         class RequestDB implements RequestDataBase {
             public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement(SQL_REQUEST_SEARCH_BOOKS + searchBook);
+                preparedStatement = conn.prepareStatement(SQL_REQUEST_SEARCH_BOOKS);
+                preparedStatement.setString(1, "%" + authorName.trim() + "%");
+                preparedStatement.setString(2, "%" + authorPatronymic.trim() + "%");
+                preparedStatement.setString(3, "%" + authorSurname.trim() + "%");
+                preparedStatement.setString(4, "%" + bookName.trim() + "%");
+                preparedStatement.setString(5, "%" + category.trim() + "%");
                 resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
                     foundedBooks.add(new Book(resultSet.getInt("idBook"), resultSet.getInt("isbn"), resultSet.getString("bookName"),
@@ -227,14 +244,17 @@ public class SqlDao implements Dao {
      */
     @Override
     public List<Client> searchClientInBase(String namePerson, String surname, String patronymic) throws SQLException, ClassNotFoundException {
-        String searchClient = "namePerson LIKE '%" + namePerson + "%' AND patronymic LIKE '%" +
-                patronymic + "%' AND surname LIKE '%" + surname + "%';";
+//        String searchClient = "namePerson LIKE '%" + namePerson + "%' AND patronymic LIKE '%" +
+//                patronymic + "%' AND surname LIKE '%" + surname + "%';";
         List<Client> foundedClients = new LinkedList<>();
 
         //inner
         class RequestDB implements RequestDataBase {
             public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement(SQL_REQUEST_SEARCH_CLIENTS + searchClient);
+                preparedStatement = conn.prepareStatement(SQL_REQUEST_SEARCH_CLIENTS);
+                preparedStatement.setString(1, "%" + namePerson.trim() + "%");
+                preparedStatement.setString(2, "%" + patronymic.trim() + "%");
+                preparedStatement.setString(3, "%" + surname.trim() + "%");
                 resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
                     foundedClients.add(new Client(resultSet.getInt("idPerson"), "client",
@@ -323,14 +343,21 @@ public class SqlDao implements Dao {
         return client[0];
     }
 
+    private final String SQL_REQUEST_EDIT_CLIENT_BY_ID = "UPDATE persons SET namePerson = ?, surname = ?, patronymic = ?, tel = ?, login = ?, password = ? WHERE idPerson = ?;";
+
     @Override
     public void editClientInDatabaseByID(int id, String namePerson, String surname, String patronymic,
                                          String tel, String loginClient, String passwordClient) throws SQLException, ClassNotFoundException {
         class RequestDB implements RequestDataBase {
             public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement("UPDATE persons SET namePerson = '" + namePerson + "', " +
-                        "surname = '" + surname + "', patronymic = '" + patronymic + "', tel = '" + tel + "', login = '" + loginClient + "', " +
-                        "password = '" + passwordClient + "' WHERE idPerson = '" + id + "';");
+                preparedStatement = conn.prepareStatement(SQL_REQUEST_EDIT_CLIENT_BY_ID);
+                preparedStatement.setString(1, namePerson.trim());
+                preparedStatement.setString(2, surname.trim());
+                preparedStatement.setString(3, patronymic.trim());
+                preparedStatement.setString(4, tel.trim());
+                preparedStatement.setString(5, loginClient.trim());
+                preparedStatement.setString(6, passwordClient.trim());
+                preparedStatement.setInt(7, id);
                 preparedStatement.executeUpdate();
 
             }
@@ -339,11 +366,14 @@ public class SqlDao implements Dao {
         connectToBase(new RequestDB());
     }
 
+    private final String SQL_REQUEST_REMOVE_CLIENT = "DELETE FROM persons WHERE idPerson = ?;";
+
     @Override
     public void removeClientByIDFromDatabase(int id) throws SQLException, ClassNotFoundException {
         class RequestDB implements RequestDataBase {
             public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement("DELETE FROM persons WHERE idPerson = '" + id + "';");
+                preparedStatement = conn.prepareStatement(SQL_REQUEST_REMOVE_CLIENT);
+                preparedStatement.setInt(1, id);
                 preparedStatement.executeUpdate();
             }
         }
@@ -425,7 +455,6 @@ public class SqlDao implements Dao {
 
     private static final String SQL_REQUEST_RETURN_BOOK_TO_CLIENT_REMOVE = "DELETE FROM shelf WHERE idBook = ?;";
     private static final String SQL_REQUEST_RETURN_BOOK_TO_CLIENT_UPDATE = "UPDATE books SET returnedDate = ? WHERE idBook = ?;";
-//    private static final String SQL_REQUEST_RETURN_BOOK_TO_CLIENT_UPDATE = "UPDATE books SET returnedDate = ? WHERE (SELECT idBook FROM books WHERE isbn = ?) = idBook;";
 
     @Override
     public void returnBookInDatabase(String idBook, Timestamp returnDate) throws SQLException, ClassNotFoundException {
@@ -471,27 +500,5 @@ public class SqlDao implements Dao {
 
         connectToBase(new RequestDB());
         return foundedClients;
-    }
-
-    /**
-     * testing
-     */
-    public void printTest() throws SQLException, ClassNotFoundException {
-        class RequestDB implements RequestDataBase {
-            public void request(Connection conn) throws SQLException {
-                preparedStatement = conn.prepareStatement(SQL_REQUEST_GET_ISSUED_BOOKS);
-                resultSet = preparedStatement.executeQuery();
-                int count = 1;
-                while (resultSet.next()) {
-                    System.out.println(count++);
-                    System.out.println(resultSet.getTimestamp("returnedDate"));
-                    for (int i = 1; i <= resultSet.getMetaData().getColumnCount(); i++) {
-                        System.out.println("     " + i + ") " + resultSet.getMetaData().getColumnName(i) + ": " + resultSet.getString(i));
-                    }
-                    System.out.println("_________________________________________");
-                }
-            }
-        }
-        connectToBase(new RequestDB());
     }
 }

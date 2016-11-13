@@ -1,8 +1,8 @@
 package ru.mail.zahar.kolesnik.library.dao;
 
 
-import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
-import ru.mail.zahar.kolesnik.library.models.entity.impl.Client;
+import ru.mail.zahar.kolesnik.library.models.entity.Book;
+import ru.mail.zahar.kolesnik.library.models.entity.Client;
 
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -24,7 +24,6 @@ public interface Dao {
     List<Book> getDebtorsFromBase() throws SQLException, ClassNotFoundException;
 
     String[] getPersonFromBase(String login, String password) throws SQLException, ClassNotFoundException;
-
 
 
     List<Book> searchBookInBase(String authorName, String authorPatronymic, String authorSurname, String bookName,
