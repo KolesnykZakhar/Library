@@ -14,8 +14,19 @@
           media="screen, projection">
 </head>
 <body>
+<%--<br>--%>
+<%--<form class="backButton" action="${pageContext.request.contextPath}/personal_cabinet">--%>
+    <%--<button type="submit" class="backButton" id="back">Back</button>--%>
+<%--</form>--%>
+<%--<form class="logOutButton" action="${pageContext.request.contextPath}/logout">--%>
+    <%--<button type="submit" class="logOutButton" id="logout">Log out</button>--%>
+<%--</form>--%>
+<%--<h6><%=session.getAttribute("role")%>: <%=session.getAttribute("name")%>--%>
+<%--</h6>--%>
+<%--<br>--%>
+<%--<h1>Personal Cabinet</h1>--%>
 <h2>Fill in information about the client</h2>
-<form>
+<form<%-- action="${pageContext.request.contextPath}/add_client" method="post"--%>>
     <label>
         <sup>*</sup>Name<br>
         <input required type="text" id="namePerson">

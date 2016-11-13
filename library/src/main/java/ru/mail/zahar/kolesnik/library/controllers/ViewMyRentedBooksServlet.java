@@ -1,7 +1,7 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
 import ru.mail.zahar.kolesnik.library.models.Library;
-import ru.mail.zahar.kolesnik.library.models.entity.Book;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

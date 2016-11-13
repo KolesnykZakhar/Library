@@ -17,9 +17,11 @@
 </head>
 <body>
 <% boolean isLibrarian = session.getAttribute("role").equals("Librarian");%>
+
 <br>
 <br>
 <h2>List of all clients in library</h2>
+
 <table class="editTable" cellpadding="1px">
     <tr>
         <th>#</th>
@@ -44,9 +46,8 @@
             <c:choose>
                 <c:when test="<%= isLibrarian%>">
                     <td>
-                        <form>
-                            <button name="clientTel" type="button" class="editButton" id="editClient"
-                                    onclick="postTel('view_all_clients.cab', '${client.tel}')">Edit
+                        <form >
+                            <button name="clientTel" type="button" class="editButton" id="editClient" onclick="postTel('view_all_clients.cab', '${client.tel}')">Edit
                                 client
                             </button>
                             <br>

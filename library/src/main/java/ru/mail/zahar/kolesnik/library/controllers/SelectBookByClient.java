@@ -1,7 +1,7 @@
 package ru.mail.zahar.kolesnik.library.controllers;
 
 import ru.mail.zahar.kolesnik.library.models.Library;
-import ru.mail.zahar.kolesnik.library.models.entity.Book;
+import ru.mail.zahar.kolesnik.library.models.entity.impl.Book;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,10 +17,14 @@ import java.util.List;
 public class SelectBookByClient extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+//        getServletConfig().getServletContext().setAttribute("selectedBook", "Choose the book");
+//        getServletConfig().getServletContext().setAttribute("selectedReturnDate", "Selected date to return");
         Library library = new Library();
         List<Book> foundedBooks = null;
         try {
             foundedBooks = library.getIssuedBooksByTel(req.getParameter("clientTel"));
+//            getServletConfig().getServletContext().setAttribute("tel", req.getParameter("clientTel"));
         } catch (SQLException | ClassNotFoundException e) {
             resp.setContentType("text/html");
             req.getRequestDispatcher("/WEB-INF/pages/error_database.jsp").forward(req, resp);
@@ -32,9 +36,16 @@ public class SelectBookByClient extends HttpServlet {
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        System.out.println();
+        System.out.println(req.getParameter("dateReturn"));
+        System.out.println(req.getParameter("idBook"));
+
+
         Library library = new Library();
         try {
             library.returnBook(req.getParameter("idBook"), Timestamp.valueOf(req.getParameter("dateReturn")));
+//            getServletConfig().getServletContext().setAttribute("tel", req.getParameter("clientTel"));
             resp.setContentType("text/html");
             req.getRequestDispatcher("/WEB-INF/pages/page_ok.jsp").forward(req, resp);
         } catch (SQLException | ClassNotFoundException e) {
@@ -42,5 +53,6 @@ public class SelectBookByClient extends HttpServlet {
             req.getRequestDispatcher("/WEB-INF/pages/error_database.jsp").forward(req, resp);
             e.printStackTrace();
         }
+
     }
 }
