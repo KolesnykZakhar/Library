@@ -16,11 +16,9 @@
           media="screen, projection">
 </head>
 <body>
-
 <br>
 <br>
 <h2>List of all clients in library</h2>
-
 <table class="editTable" cellpadding="1px">
     <tr>
         <th>#</th>
