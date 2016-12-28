@@ -1,96 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c07c944-7b74-4e92-b701-c6e14cd10b4a" name="Default" comment="without sample2">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/AddBookServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/AddClientServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/EditClientServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/IssueBookServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/LogOutServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/PersonalCabinetServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/RemoveClientServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ReturnBookServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SearchBookServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SearchClientServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectBookByClient.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectBookToIssueServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectClientToIssueServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectedBookServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectedClientServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewAllBooksServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewAllClientsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewDebtorsServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewIssuedBooksServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewMyRentedBooksServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/filters/FilterConnect$1RoleAndName.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/filters/FilterConnect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/Dao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$10RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$11RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$12RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$13RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$14RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$1Request.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$1RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$2Request.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$2RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$3RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$4RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$5RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$6RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$7RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$8RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$9RequestDB.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$RequestDataBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/models/Library.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/models/entity/Book.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/models/entity/Client.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/activation-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/jquery-3.1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/mockito-all-1.10.19.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/persistence-api-1.0.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/add_book.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/add_client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_book_from_client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_client_to_return_book.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_from_founded_book.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_from_founded_client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/edit_client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_book_already_issued.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_client_are_debtors.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_confirm_password.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_database.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_page.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/founded_book.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/founded_client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/issue_book.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/page_ok.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/personal_cabinet.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/return_book_from_client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/search_book.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/search_client.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/select_book_to_issue.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/select_client_to_issue.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_all_books.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_all_clients.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_debtors.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_issued_books.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_my_rented_books.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/error_authorization.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/index.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/resources/javaScript/ajax_post_get.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/resources/main.css" afterPath="" />
+    <list default="true" id="9c07c944-7b74-4e92-b701-c6e14cd10b4a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="library.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -245,8 +157,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="225">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1784,7 +1696,7 @@
       <workItem from="1482483496804" duration="734000" />
       <workItem from="1482962088200" duration="405000" />
       <workItem from="1482962642244" duration="140000" />
-      <workItem from="1482963016706" duration="348000" />
+      <workItem from="1482963016706" duration="374000" />
     </task>
     <task id="LOCAL-00001" summary="without sample">
       <created>1482962204717</created>
@@ -1807,7 +1719,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482962393681</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="without sample2">
+      <created>1482963374712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482963374712</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1825,7 +1744,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432863000" />
+    <option name="totallyTimeSpent" value="432889000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
