@@ -1,7 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c07c944-7b74-4e92-b701-c6e14cd10b4a" name="Default" comment="">
+    <list default="true" id="9c07c944-7b74-4e92-b701-c6e14cd10b4a" name="Default" comment="without sample2">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/AddBookServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/AddClientServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/EditClientServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/IssueBookServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/LogOutServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/PersonalCabinetServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/RemoveClientServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ReturnBookServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SearchBookServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SearchClientServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectBookByClient.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectBookToIssueServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectClientToIssueServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectedBookServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/SelectedClientServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewAllBooksServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewAllClientsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewDebtorsServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewIssuedBooksServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/ViewMyRentedBooksServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/filters/FilterConnect$1RoleAndName.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/controllers/filters/FilterConnect.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/Dao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$10RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$11RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$12RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$13RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$14RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$1Request.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$1RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$2Request.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$2RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$3RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$4RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$5RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$6RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$7RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$8RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$9RequestDB.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao$RequestDataBase.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/dao/impl/SqlDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/models/Library.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/models/entity/Book.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/classes/ru/mail/zahar/kolesnik/library/models/entity/Client.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/activation-1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/javaee-api-7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/javax.mail-1.5.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/jquery-3.1.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/mockito-all-1.10.19.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/mysql-connector-java-5.1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/lib/persistence-api-1.0.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/add_book.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/add_client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_book_from_client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_client_to_return_book.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_from_founded_book.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/choose_from_founded_client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/edit_client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_book_already_issued.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_client_are_debtors.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_confirm_password.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_database.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/error_page.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/founded_book.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/founded_client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/issue_book.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/page_ok.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/personal_cabinet.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/return_book_from_client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/search_book.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/search_client.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/select_book_to_issue.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/select_client_to_issue.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_all_books.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_all_clients.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_debtors.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_issued_books.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/pages/view_my_rented_books.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/error_authorization.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/resources/javaScript/ajax_post_get.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample/servlet/container/deploy/directory/resources/main.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -158,8 +245,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="150">
+              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -804,8 +891,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -834,23 +920,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="container" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deploy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directory" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -864,71 +938,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="container" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="deploy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="servlet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="container" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deploy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="directory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1754,6 +1783,8 @@
       <workItem from="1482305504340" duration="538000" />
       <workItem from="1482483496804" duration="734000" />
       <workItem from="1482962088200" duration="405000" />
+      <workItem from="1482962642244" duration="140000" />
+      <workItem from="1482963016706" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="without sample">
       <created>1482962204717</created>
@@ -1794,7 +1825,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432375000" />
+    <option name="totallyTimeSpent" value="432863000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1817,17 +1848,16 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.123523094" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34767836" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25934315" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18573046" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18459795" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1839,6 +1869,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25934315" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="848" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
