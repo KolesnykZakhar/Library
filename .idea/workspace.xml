@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9c07c944-7b74-4e92-b701-c6e14cd10b4a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="library.iws" />
@@ -157,8 +158,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="250">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -240,9 +241,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -1653,7 +1651,7 @@
       <workItem from="1482249902167" duration="3704000" />
       <workItem from="1482305504340" duration="538000" />
       <workItem from="1482483496804" duration="734000" />
-      <workItem from="1482962088200" duration="188000" />
+      <workItem from="1482962088200" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="without sample">
       <created>1482962204717</created>
@@ -1662,7 +1660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482962204717</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="without sample2">
+      <created>1482962287133</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1482962287133</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1680,7 +1685,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432158000" />
+    <option name="totallyTimeSpent" value="432267000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1780,7 +1785,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="without sample" />
-    <option name="LAST_COMMIT_MESSAGE" value="without sample" />
+    <MESSAGE value="without sample2" />
+    <option name="LAST_COMMIT_MESSAGE" value="without sample2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
