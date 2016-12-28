@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9c07c944-7b74-4e92-b701-c6e14cd10b4a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="library.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -157,8 +158,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -1696,7 +1697,7 @@
       <workItem from="1482483496804" duration="734000" />
       <workItem from="1482962088200" duration="405000" />
       <workItem from="1482962642244" duration="140000" />
-      <workItem from="1482963016706" duration="374000" />
+      <workItem from="1482963016706" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="without sample">
       <created>1482962204717</created>
@@ -1726,7 +1727,14 @@
       <option name="project" value="LOCAL" />
       <updated>1482963374712</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="without sample2">
+      <created>1482963397658</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1482963397658</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1744,7 +1752,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432889000" />
+    <option name="totallyTimeSpent" value="432901000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
