@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="library:war exploded">
-    <output-path>$PROJECT_DIR$/sample/servlet/container/deploy/directory</output-path>
+    <output-path>$PROJECT_DIR$/target/library-1.0-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -19,7 +19,7 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/sample/servlet/container/deploy/directory/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/library-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="library/web/Web" />
     </root>

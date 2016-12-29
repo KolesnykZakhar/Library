@@ -83,9 +83,9 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.0.0</version>
+                <version>2.1.1</version>
                 <configuration>
-                    <webappDirectory>/sample/servlet/container/deploy/directory</webappDirectory>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
         </plugins>
